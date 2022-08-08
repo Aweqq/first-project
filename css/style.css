@@ -1,0 +1,301 @@
+@font-face{
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: bold; 
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.woff") format("truetype");
+    font-style: normal;     
+    font-weight: normal; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+
+/* Шапка сайта *//* Шапка сайта */
+/* Шапка сайта *//* Шапка сайта */
+.header {
+    background-image: url(/img/banner-bg.jpg);
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 100%;
+    height: 449px;
+}
+
+/* растягивание бэкграунда на большом экране */
+@media (min-width: 1660px){
+    .header {
+        background-size: 100% auto;
+    }
+}
+
+/* Меню навигации в шапке */
+.menu {
+    background-image: url(/svg/noemi-logo.svg);
+    background-size: 179px 41px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    display: flex;
+    max-width: 1170px;
+    margin: auto;
+    padding: 28px 0 28px 28px;
+    position: relative;
+    z-index: 1;
+}
+.menu__ul {
+    display: flex;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    font-size: 13px;
+    color: #ffffff;
+}
+.menu__li {
+    padding: 1em;
+}
+.menu__li:hover {
+    text-decoration: underline;
+}
+
+/* Заголовок в шапке */
+.header__title {
+    display: flex;
+    max-width: 1170px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 352px;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    font-size: 45px;
+    line-height: 75px;
+    color: #ffffff;
+}
+
+/* Сброс стиля ссылки */
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Затемнение шапки */
+.header {
+    position: relative;
+    }
+.header:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* МЕЙН *//* МЕЙН */
+/* МЕЙН *//* МЕЙН */
+
+/* Тренды *//* Тренды */
+/* Тренды *//* Тренды */
+ .trends {
+}
+.trends__title, .side-bar__our-posts-title{
+    display: inline-block;
+    width: 100%;
+    text-align: center; 
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+/* Полоска подчеркивания */
+.trends__title::after {
+    content: '';
+    position: absolute;    
+    top: 22%; left: calc(50% - 34px); 
+    width: 68px;
+    height: 100%;
+    border-bottom: solid 3px;
+    border-color: rgba(181, 159, 91, 0.4);
+}
+.side-bar__our-posts-title::after {
+    content: '';
+    position: absolute;    
+    top: 22%; left: calc(50% - 37px); 
+    width: 68px;
+    height: 100%;
+    border-bottom: solid 3px;
+    border-color: rgba(181, 159, 91, 0.4);
+}
+
+/* контенер для карточек */
+.card-container {
+    margin: auto;
+    display: flex;
+    height: 320px;
+}
+.card-container div{
+border: 3px solid rgba(181, 159, 91, 0.6);
+position: absolute;
+z-index: 1;
+margin: 1em;
+bottom: 0;
+padding-left: 1em;
+padding-right: 1em;
+}
+
+/* отступ между карточками */
+.trends-card:nth-child(n+2) {
+margin-left: 4px;
+}
+.trends-card {
+    flex: 1;
+}
+
+.trends-card__category, .post-list-card__category {
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(181, 159, 91, 0.8);
+    margin-bottom: 0;
+}
+.trends-card__category:hover, .post-list-card__category:hover {
+    text-decoration: underline;
+}
+.trends-card__title, .post-list-card__title {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+.trends-card__title:hover, .post-list-card__title:hover {
+    color: rgba(181, 159, 91, 0.8);
+}
+
+/* фоны для карточек */
+.trends_interior {
+    background-image: url(/img/trend1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.trends_food {
+    background-image: url(/img/trend2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.trends_travel {
+    background-image: url(/img/trend3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.trends_health {
+    background-image: url(/img/trend4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Затемнение карточек */
+.trends-card {
+    position: relative;
+}
+.trends-card:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+/* Карточки ПОСТ-ЛИСТ *//* Карточки ПОСТ-ЛИСТ */
+/* Карточки ПОСТ-ЛИСТ *//* Карточки ПОСТ-ЛИСТ */
+.post-list-card__title {
+    color: #0f0d0e;
+}
+
+ .post-list { 
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 770px;
+    margin: auto;
+}
+.post-list-card {
+    display: flex ;
+    margin-top: 64px;
+}
+.post-list-card__img-container {
+width: 385px;
+height: 294px;
+background-color: #eff6f1;
+}
+.post-list-card__main {
+    margin-left: 30px;
+    max-width: 380px;
+}
+.post-list-card__category {
+    display: inline-block;
+    width: 100%;
+}
+.post-list-card__title {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+.post-list-card__info {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.post-list-card__data {
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #888888;
+}
+.post-list-card__author {
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #000000;
+    padding-left: 1em;
+}
+.post-list-card__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #0f0d0e;
+    margin-bottom: 1em;
+}
+
+/* САЙД БАР справа *//* САЙД БАР справа */
+/* САЙД БАР справа *//* САЙД БАР справа */
+.side-bar__our-posts-title {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.side-bar {
+    max-width: 273px;
+}

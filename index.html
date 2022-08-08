@@ -1,12 +1,205 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>название сайта</title>
+  <div class="content">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css\style.css">
+  <title>название сайта</title>
+  </div>
+  <div class="cover"></div>
 </head>
+
 <body>
-    
+  <!-- Шапка -->
+  <header class="header">
+    <nav class="menu">
+      <ul class="menu__ul">
+        <li class="menu__li"><a href="#">Главная</a></li>
+        <li class="menu__li"><a href="#">Посты</a></li>
+        <li class="menu__li"><a href="#">Статьи</a></li>
+        <li class="menu__li"><a href="#">Теги</a></li>
+        <li class="menu__li"><a href="#">Темы</a></li>
+        <li class="menu__li"><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <h1 class="header__title">Блог о творчестве, спорте,<br> и образе жизни</h1>
+  </header>
+
+  <main>
+    <article class="trends">
+      <h2 class="trends__title">Сейчас в тренде</h2>
+<!-- каарточки СЙЧАС В ТРЕНДЕ -->
+      <div class="card-container">
+        <section class="trends-card trends_interior">
+          <div>
+            <a href="#" class="trends-card__category">Lifestyle &emsp; interior</a>
+            <a href="#" class="trends-card__title">Сейчас в тренде: сад на подоконнике</a>
+          </div>
+        </section>
+        <section class="trends-card trends_food">
+          <div>
+            <a href="#" class="trends-card__category">Food</a>
+            <a href="#" class="trends-card__title">Cыры на красивых картинках из интернета какие они на вкус?</a>
+          </div>
+        </section>
+        <section class="trends-card trends_travel">
+          <div>
+            <a href="#" class="trends-card__category">Lifestyle &emsp; travel</a>
+            <a href="#" class="trends-card__title">Собираемся в первый поход в горы</a>
+          </div>
+        </section>
+        <section class="trends-card trends_health">
+          <div>
+            <a href="#" class="trends-card__category">Food &emsp; health</a>
+            <a href="#" class="trends-card__title">Сейчас в тренде: сколько витамина в лимонах?</a>
+          </div>
+        </section>
+      </div>
+    </article>
+<!-- Посты -->
+    <article class="post-list">
+      <section class="post-list-card">
+        <div class="post-list-card__img-container">
+          <img src="/img/last-post1.jpg" alt="Человек идет в воду">
+        </div>
+        <div class="post-list-card__main">
+          <a href="#" class="post-list-card__category">Food &emsp; health</a>
+          <a href="#" class="post-list-card__title">Сейчас в тренде: сколько витамина в лимонах?</a>
+          <p class="post-list-card__info">
+            <span class="post-list-card__data">10 июня 2019</span>
+            <span class="post-list-card__author">Неизвестный автор</span>
+          </p>
+          <blockquote cite="https://shkolazhizni.ru/culture/articles/71480/" class="post-list-card__text">
+            <p class="post-list-card__text"> 
+              Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?
+            </p>
+          </div>
+      </section>
+
+      <section class="post-list-card">
+        <div class="post-list-card__img-container">
+          <img src="/img/last-post2.jpg" alt="Девушка стоит на голове на пляже">
+        </div>
+        <div class="post-list-card__main">
+          <a href="#" class="post-list-card__category">health &emsp; lifestyle</a>
+          <a href="#" class="post-list-card__title">йога для начинающих в домашних условиях</a>
+          <p class="post-list-card__info">
+            <span class="post-list-card__data">10 июня 2019</span>
+            <span class="post-list-card__author">Неизвестный автор</span>
+          </p>
+            <p class="post-list-card__text"> 
+              Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.
+            </p>
+          </div>
+      </section>
+
+      <section class="post-list-card">
+        <div class="post-list-card__img-container">
+          <img src="/img/last-post3.jpg" alt="Люди на концерте">
+        </div>
+        <div class="post-list-card__main">
+          <a href="#" class="post-list-card__category">music</a>
+          <a href="#" class="post-list-card__title">Лучшие музыкальные фестивали этого лета</a>
+          <p class="post-list-card__info">
+            <span class="post-list-card__data">10 июня 2019</span>
+            <span class="post-list-card__author">Неизвестный автор</span>
+          </p>
+            <p class="post-list-card__text"> 
+              Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
+            </p>
+            <p class="post-list-card__text"> 
+              Мы составили список лучших летних фестивалей по всему миру.
+            </p>
+          </div>
+      </section>
+
+      <section class="post-list-card">
+        <div class="post-list-card__img-container">
+          <img src="/img/last-post4.jpg" alt="Кухонный стол накрытый едой">
+        </div>
+        <div class="post-list-card__main">
+          <a href="#" class="post-list-card__category">lifestyle &emsp; food</a>
+          <a href="#" class="post-list-card__title">Наукоёмкий подход к кулинарии</a>
+          <p class="post-list-card__info">
+            <span class="post-list-card__data">10 июня 2019</span>
+            <span class="post-list-card__author">Неизвестный автор</span>
+          </p>
+            <p class="post-list-card__text"> 
+              Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.
+            </p>
+          </div>
+      </section>
+
+      <section class="post-list-card">
+        <div class="post-list-card__img-container">
+          <img src="/img/last-post5.jpg" alt="Кухонный стол накрытый едой">
+        </div>
+        <div class="post-list-card__main">
+          <a href="#" class="post-list-card__category">lifestyle &emsp; interior  &emsp; art</a>
+          <a href="#" class="post-list-card__title">делаем модные принты на подушках для интерьера</a>
+          <p class="post-list-card__info">
+            <span class="post-list-card__data">10 июня 2019</span>
+            <span class="post-list-card__author">Неизвестный автор</span>
+          </p>
+            <p class="post-list-card__text"> 
+              Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.
+            </p>
+          </div>
+      </section>
+
+    </article>
+
+
+
+<!-- САЙД БАР справа -->
+    <aside class="side-bar">
+        
+        
+        <div class="side-bar__post-container">
+          <h2 class="side-bar__our-posts-title">Наши посты</h2>
+          <section class="side-bar__post-card">
+
+          </section>
+        </div>
+
+        <div class="side-bar__search-form">
+          <input type="button" value="fdf">
+        </div>
+        
+        <div class="side-bar__subscribe-container">
+          <h2 class="side-bar__subs-title">Рвссылка</h2>
+          <input type="Ваш email-адрес">
+          <button>подписаться</button>
+        </div>
+
+        <div class="side-bar__tags">
+          <h2 class="side-bar__tags-title">Теги</h2>
+
+          <div class="side-bar__tags-container"></div> 
+        </div>
+
+        <div class="side-bar__theme">
+          <h2 class="side-bar__tags-topics">Темы</h2>
+          <div class="side-bar__tags-topics_container"></div>
+
+        </div>
+
+      </aside>
+
+
+
+
+<!-- НАШИ ИЗДЕЛИЯ снизу -->
+    <aside class="shop"></aside>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__icons"></div>
+    <div class="footer__text"></div>
+  </footer>
 </body>
 </html>
+
+
