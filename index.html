@@ -167,7 +167,7 @@
       <aside class="side-bar">
 
         <div class="side-bar__post-container">
-          <h2 class="side-bar__our-posts-title">Наши посты</h2>
+          <h2 class="side-bar__posts-title">Наши посты</h2>
 
           <section class="side-bar__post-card">
             <img class="side-bar__post-card-img" src="./img/2.jpg" alt="Человек идет в воду">
@@ -211,40 +211,122 @@
           </section>
         </div>
 
-        <!-- <div class="side-bar__search-form">
-          <input type="button" value="fdf">
-        </div>
+        <!-- ФОРМА ПОИСКА -->
+        <form class="side-bar__search-form" action="#">
+          <input type="text" placeholder="Найти..." name="search">
+          <button type="submit">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <g clip-path="url(#clip0)">
+                <path stroke="#B59F5B"
+                  d="M373.403 339.292l-.29.344.312.324 121.857 126.737c10.117 10.524 9.782 27.302-.733 37.42l.347.36-.347-.36c-4.948 4.763-11.466 7.383-18.338 7.383-7.261 0-14.034-2.884-19.072-8.116L334.357 375.686l-.297-.309-.351.246c-34.78 24.442-75.457 37.317-118.145 37.317-113.708 0-206.22-92.513-206.22-206.22C9.344 93.012 101.856.5 215.564.5c113.707 0 206.22 92.512 206.22 206.22 0 48.668-17.125 95.416-48.381 132.572zm-4.546-132.572c0-84.528-68.765-153.293-153.293-153.293S62.271 122.192 62.271 206.72s68.765 153.293 153.293 153.293 153.293-68.765 153.293-153.293z" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <path fill="#fff" d="M0 0h512v512H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </form>
 
+        <!-- РАССЫЛКА -->
         <div class="side-bar__subscribe-container">
-          <h2 class="side-bar__subs-title">Рвссылка</h2>
-          <input type="Ваш email-адрес">
-          <button>подписаться</button>
+          <h2 class="side-bar__posts-title">Рвссылка</h2>
+          <input type="Ваш email-адрес" placeholder="Ваш email-адрес">
+          <button>ПОДПИСАТЬСЯ</button>
         </div>
 
+        <!-- ТЕГИ -->
         <div class="side-bar__tags">
-          <h2 class="side-bar__tags-title">Теги</h2>
+          <h2 class="side-bar__posts-title">Теги</h2>
+          <div class="side-bar__tags-container">
+            <button>fassion</button>
+            <button>musik</button>
+            <button>lifestyle</button>
+            <button>art</button>
+            <button>interior</button>
+            <button>travel</button>
+            <button>food</button>
+            <button>health</button>
 
-          <div class="side-bar__tags-container"></div>
+          </div>
         </div>
-
+        <!-- ТЕМЫ -->
         <div class="side-bar__theme">
-          <h2 class="side-bar__tags-topics">Темы</h2>
-          <div class="side-bar__tags-topics_container"></div>
-
+          <h2 class="side-bar__posts-title">Темы</h2>
+          <div class="side-bar__tags-topics_container">
+            <ul>
+              <li><a href="#" class="topics-text">Красота</a> <span class="topics-num">12</span></li>
+              <li><a href="#" class="topics-text">Здоровье</a> <span class="topics-num">4</span></li>
+              <li><a href="#" class="topics-text">Образ</a> <span class="topics-num">145</span></li>
+              <li><a href="#" class="topics-text">Музыка</a> <span class="topics-num">28</span></li>
+              <li><a href="#" class="topics-text">Спорт</a> <span class="topics-num">62</span></li>
+              <li><a href="#" class="topics-text">Йога</a> <span class="topics-num">8</span></li>
+            </ul>
+          </div>
         </div>
 
-      </aside> -->
-
+      </aside>
     </div>
 
-    <!-- НАШИ ИЗДЕЛИЯ снизу -->
-    <aside class="shop"></aside>
+    <!-- НАШИ ИЗДЕЛИЯ -->
+    <div class="shop">
+      <h2 class="trends__title">Наши ИЗДЕЛИЯ</h2>
+      <div class="shop__card-container">
 
+        <section class="shop-card">
+          <h2 class="post-list-card__title  flex1">Подушки на диване</h2>
+          <img class="shop-card__img" src="../img/shop-item-desk1.jpg" alt="Подушка с надписью">
+          <p class="flex2">Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь</a>.</p>
+          <div class="shop-text">
+            <div>
+              <p class="old-price">1000&#8381;</p>
+              <p class="new-price">800&#8381;</p>
+            </div>
+            <button> В МАГАЗИН</button>
+          </div>
+        </section>
+
+        <section class="shop-card">
+          <h2 class="post-list-card__title  flex1">Кукла «Зайчик»</h2>
+          <img class="shop-card__img" src="../img/shop-item-desk1.jpg" alt="Подушка с надписью">
+          <p class="flex2">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#">весенняя серия
+              постов</a> в блоге и несколько подкастов.</p>
+          <div class="shop-text">
+            <div>
+              <p style="min-height: 1em" class="old-price"></p>
+              <p class="new-price">3500&#8381;</p>
+            </div>
+            <button> В МАГАЗИН</button>
+          </div>
+        </section>
+
+        <section class="shop-card">
+          <h2 class="post-list-card__title  flex1">Шестиугольная рамка</h2>
+          <img class="shop-card__img" src="../img/shop-item-desk1.jpg" alt="Подушка с надписью">
+          <p class="flex2">Необычная рамка для украшения дома из видео <a href="#">«Как сделать рамку из подручных
+              средств за 30 минут»</a>.</p>
+          <div class="shop-text">
+            <div>
+              <p class="old-price">500&#8381;</p>
+              <p class="new-price">400&#8381;</p>
+            </div>
+            <button> В МАГАЗИН</button>
+          </div>
+        </section>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
-    <div class="footer__icons"></div>
-    <div class="footer__text"></div>
+    <div class="footer__contacts">
+      <li><a style="" href="#"><img src="./svg/004-twitter.svg" alt="twitter"></a></li>
+      <li><a href="#"><img src="/svg/001-pinterest.svg" alt="pinterest"></a></li>
+      <li><a href="#"><img src="./svg/002-facebook-logo.svg" alt="facebook"></a></li>
+      <li><a href="#"><img src="./svg/005-instagram.svg" alt="instagram"></a></li>
+      <li><a href="#"><img src="./svg/003-tumblr.svg" alt="tumblr"></a></li>
+    </div>
+    <div class="copyright">Copyright © 2009–2019 City Blog LLC.</div>
   </footer>
 </body>
 
