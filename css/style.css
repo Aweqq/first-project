@@ -558,6 +558,7 @@ a {
     height: 49px;
     background-color: #b59f5b;
     border: 0;
+    color: #ffffff;
 }
 
 .shop-text button:hover {
@@ -594,6 +595,7 @@ a {
     color: #0f0d0e;
     margin: 0;
 }
+
 
 /* FOOTER */
 .footer__contacts {
