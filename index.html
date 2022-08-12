@@ -2,14 +2,13 @@
 <html lang="ru">
 
 <head>
-  <div class="content">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\style.css">
-    <title>NOEMI</title>
-  </div>
-  <div class="cover"></div>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-mobil.css">
+  <link rel="stylesheet" href="./css/style-tablet.css">
+  <title>NOEMI</title>
 </head>
 
 <body>
@@ -36,26 +35,26 @@
       <div class="card-container">
         <section class="trends-card trends_interior">
           <div>
-            <a href="#" class="trends-card__category">Lifestyle &emsp; interior</a>
-            <a href="#" class="trends-card__title">Сейчас в тренде: сад на подоконнике</a>
+            <h2><a href="#" class="trends-card__category">Lifestyle &emsp; interior</a></h2>
+            <a href="#" class="trends-card__title">Сейчас в тренде: сад на подоконнике</a>
           </div>
         </section>
         <section class="trends-card trends_food">
           <div>
-            <a href="#" class="trends-card__category">Food</a>
+            <h2><a href="#" class="trends-card__category">Food</a></h2>
             <a href="#" class="trends-card__title">Cыры на красивых картинках из интернета какие они на вкус?</a>
           </div>
         </section>
         <section class="trends-card trends_travel">
           <div>
-            <a href="#" class="trends-card__category">Lifestyle &emsp; travel</a>
+            <h2><a href="#" class="trends-card__category">Lifestyle &emsp; travel</a></h2>
             <a href="#" class="trends-card__title">Собираемся в первый поход в горы</a>
           </div>
         </section>
         <section class="trends-card trends_health">
           <div>
-            <a href="#" class="trends-card__category">Food &emsp; health</a>
-            <a href="#" class="trends-card__title">Сейчас в тренде: сколько витамина в лимонах?</a>
+            <h2><a href="#" class="trends-card__category">Food &emsp; health</a></h2>
+            <a href="#" class="trends-card__title">Сейчас в тренде: сколько витамина в лимонах?</a>
           </div>
         </section>
       </div>
@@ -66,12 +65,13 @@
 
       <!-- Посты -->
       <article class="post-list">
+
         <section class="post-list-card">
           <div class="post-list-card__img-container">
             <img src="./img/last-post1.jpg" alt="Человек идет в воду">
           </div>
           <div class="post-list-card__main">
-            <a href="#" class="post-list-card__category">Food &emsp; health</a>
+            <h3><a href="#" class="post-list-card__category">Food &emsp; health</a></h3>
             <a href="#" class="post-list-card__title">10 мест, ради которых стоит
               проснуться на рассвете</a>
             <p class="post-list-card__info">
@@ -84,6 +84,7 @@
                 закрыты.
                 Что посмотреть?
               </p>
+            </blockquote>
           </div>
         </section>
 
@@ -92,7 +93,7 @@
             <img src="./img/last-post2.jpg" alt="Девушка стоит на голове на пляже">
           </div>
           <div class="post-list-card__main">
-            <a href="#" class="post-list-card__category">health &emsp; lifestyle</a>
+            <h3><a href="#" class="post-list-card__category">health &emsp; lifestyle</a></h3>
             <a href="#" class="post-list-card__title">йога для начинающих в домашних условиях</a>
             <p class="post-list-card__info">
               <span class="post-list-card__data">10 июня 2019</span>
@@ -110,7 +111,7 @@
             <img src="./img/last-post3.jpg" alt="Люди на концерте">
           </div>
           <div class="post-list-card__main">
-            <a href="#" class="post-list-card__category">music</a>
+            <h3><a href="#" class="post-list-card__category">music</a></h3>
             <a href="#" class="post-list-card__title">Лучшие музыкальные фестивали этого лета</a>
             <p class="post-list-card__info">
               <span class="post-list-card__data">10 июня 2019</span>
@@ -130,7 +131,7 @@
             <img src="./img/last-post4.jpg" alt="Кухонный стол накрытый едой">
           </div>
           <div class="post-list-card__main">
-            <a href="#" class="post-list-card__category">lifestyle &emsp; food</a>
+            <h3><a href="#" class="post-list-card__category">lifestyle &emsp; food</a></h3>
             <a href="#" class="post-list-card__title">Наукоёмкий подход к кулинарии</a>
             <p class="post-list-card__info">
               <span class="post-list-card__data">10 июня 2019</span>
@@ -148,7 +149,7 @@
             <img src="./img/last-post5.jpg" alt="Кухонный стол накрытый едой">
           </div>
           <div class="post-list-card__main">
-            <a href="#" class="post-list-card__category">lifestyle &emsp; interior &emsp; art</a>
+            <h3><a href="#" class="post-list-card__category">lifestyle &emsp; interior &emsp; art</a></h3>
             <a href="#" class="post-list-card__title">делаем модные принты на подушках для интерьера</a>
             <p class="post-list-card__info">
               <span class="post-list-card__data">10 июня 2019</span>
@@ -162,17 +163,18 @@
         </section>
       </article>
 
-      <!-- САЙД БАР справа -->
+      <!-- САЙД БАР -->
       <aside class="side-bar">
 
         <div class="side-bar__post-container">
+
           <h2 class="side-bar__posts-title">Наши посты</h2>
 
           <section class="side-bar__post-card">
             <img class="side-bar__post-card-img" src="./img/2.jpg" alt="Человек идет в воду">
             <div class="side-bar__post-card-text">
               <span class="side-bar__data">14 июня 2019</span>
-              <a href="#" class="side-bar__title">10 мест, ради которых стоит проснуться</a>
+              <h3><a href="#" class="side-bar__title">10 мест, ради которых стоит проснуться</a></h3>
             </div>
           </section>
 
@@ -180,7 +182,7 @@
             <img class="side-bar__post-card-img" src="./img/151.jpg" alt="Человек идет в воду">
             <div class="side-bar__post-card-text">
               <span class="side-bar__data">14 июня 2019</span>
-              <a href="#" class="side-bar__title">Йога для домашних</a>
+              <h3><a href="#" class="side-bar__title">Йога для домашних</a></h3>
             </div>
           </section>
 
@@ -188,7 +190,7 @@
             <img class="side-bar__post-card-img" src="./img/45.jpg" alt="Человек идет в воду">
             <div class="side-bar__post-card-text">
               <span class="side-bar__data">14 июня 2019</span>
-              <a href="#" class="side-bar__title">как мы превратили классное место в балкон</a>
+              <h3><a href="#" class="side-bar__title">как мы превратили классное место в балкон</a></h3>
             </div>
           </section>
 
@@ -196,7 +198,7 @@
             <img class="side-bar__post-card-img" src="./img/501.jpg" alt="Человек идет в воду">
             <div class="side-bar__post-card-text">
               <span class="side-bar__data">14 июня 2019</span>
-              <a href="#" class="side-bar__title">Кулинарный подход к науке</a>
+              <h3><a href="#" class="side-bar__title">Кулинарный подход к науке</a></h3>
             </div>
           </section>
 
@@ -204,10 +206,10 @@
             <img class="side-bar__post-card-img" src="./img/7.jpg" alt="Человек идет в воду">
             <div class="side-bar__post-card-text">
               <span class="side-bar__data">14 июня 2019</span>
-              <a href="#" class="side-bar__title">лучшие прически для
-                распущенных волос</a>
+              <h3><a href="#" class="side-bar__title">лучшие прически для распущенных волос</a></h3>
             </div>
           </section>
+
         </div>
 
         <!-- ФОРМА ПОИСКА -->
@@ -231,7 +233,7 @@
         <!-- РАССЫЛКА -->
         <div class="side-bar__subscribe-container">
           <h2 class="side-bar__posts-title">Рвссылка</h2>
-          <input type="Ваш email-адрес" placeholder="Ваш email-адрес">
+          <input type="email" placeholder="Ваш email-адрес">
           <button>ПОДПИСАТЬСЯ</button>
         </div>
 
@@ -247,9 +249,9 @@
             <button>travel</button>
             <button>food</button>
             <button>health</button>
-
           </div>
         </div>
+
         <!-- ТЕМЫ -->
         <div class="side-bar__theme">
           <h2 class="side-bar__posts-title">Темы</h2>
@@ -273,7 +275,7 @@
       <div class="shop__card-container">
 
         <section class="shop-card">
-          <h2 class="post-list-card__title  flex1">Подушки на диване</h2>
+          <h2 class="title2  shop-card-title">Подушки на диване</h2>
           <img class="shop-card__img" src="./img/shop-item-desk1.jpg" alt="Подушка с надписью">
           <p class="flex2">Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь</a>.</p>
           <div class="shop-text">
@@ -286,7 +288,7 @@
         </section>
 
         <section class="shop-card">
-          <h2 class="post-list-card__title  flex1">Кукла «Зайчик»</h2>
+          <h2 class="title2  shop-card-title">Кукла «Зайчик»</h2>
           <img class="shop-card__img" src="./img/shop-item-desk2.jpg" alt="Подушка с надписью">
           <p class="flex2">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#">весенняя серия
               постов</a> в блоге и несколько подкастов.</p>
@@ -300,7 +302,7 @@
         </section>
 
         <section class="shop-card">
-          <h2 class="post-list-card__title  flex1">Шестиугольная рамка</h2>
+          <h2 class="title2  shop-card-title">Шестиугольная рамка</h2>
           <img class="shop-card__img" src="./img/shop-item-desk3.jpg" alt="Подушка с надписью">
           <p class="flex2">Необычная рамка для украшения дома из видео <a href="#">«Как сделать рамку из подручных
               средств за 30 минут»</a>.</p>
@@ -318,11 +320,13 @@
 
   <footer class="footer">
     <div class="footer__contacts">
-      <li><a style="" href="#"><img src="./svg/004-twitter.svg" alt="twitter"></a></li>
-      <li><a href="#"><img src="./svg/001-pinterest.svg" alt="pinterest"></a></li>
-      <li><a href="#"><img src="./svg/002-facebook-logo.svg" alt="facebook"></a></li>
-      <li><a href="#"><img src="./svg/005-instagram.svg" alt="instagram"></a></li>
-      <li><a href="#"><img src="./svg/003-tumblr.svg" alt="tumblr"></a></li>
+      <ul>
+        <li><a style="" href="#"><img src="./svg/004-twitter.svg" alt="twitter"></a></li>
+        <li><a href="#"><img src="./svg/001-pinterest.svg" alt="pinterest"></a></li>
+        <li><a href="#"><img src="./svg/002-facebook-logo.svg" alt="facebook"></a></li>
+        <li><a href="#"><img src="./svg/005-instagram.svg" alt="instagram"></a></li>
+        <li><a href="#"><img src="./svg/003-tumblr.svg" alt="tumblr"></a></li>
+      </ul>
     </div>
     <div class="copyright">Copyright © 2009–2019 City Blog LLC.</div>
   </footer>
