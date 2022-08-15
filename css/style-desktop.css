@@ -12,10 +12,9 @@
     background-repeat: no-repeat;
     text-transform: uppercase;
     color: #ffffff;
-    width: 100%;
+    max-width: 100%;
     height: 449px;
     padding-left: 30px;
-
 }
 
 /* растягивание бэкграунда на большом экране */
