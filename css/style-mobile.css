@@ -524,13 +524,11 @@
 }
 
 .shop-card__img-m {
-  content: '';
   width: 86%;
   height: 86%;
   position: absolute;
   background-repeat: no-repeat;
   top: -75%;
-  z-index: -1;
 }
 
 .shop-card-title {

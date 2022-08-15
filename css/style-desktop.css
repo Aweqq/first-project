@@ -510,14 +510,12 @@
     display: none;
 }
 
-.shop-card__img-d {
-    content: '';
+.shop-card__img-d {   
     width: 86%;
     height: 86%;
     position: absolute;
     background-repeat: no-repeat;
     top: -75%;
-    z-index: -1;
 }
 
 .shop-card-title {
