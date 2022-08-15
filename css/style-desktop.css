@@ -503,7 +503,14 @@
     position: relative;
 }
 
-.shop-card__img {
+.shop-card__img-t {
+    display: none;
+}
+.shop-card__img-m {
+    display: none;
+}
+
+.shop-card__img-d {
     content: '';
     width: 86%;
     height: 86%;

@@ -510,8 +510,13 @@
   position: relative;
   margin-top: 230px;
 }
-
-.shop-card__img {
+.shop-card__img-d {
+  display: none;
+}
+.shop-card__img-m {
+  display: none;
+}
+.shop-card__img-t {
   content: '';
   width: 86%;
   height: 86%;
