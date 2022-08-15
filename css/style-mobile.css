@@ -154,9 +154,7 @@
 }
 
 /*Тренды: отступ между карточками */
-.trends-card:nth-child(n+1) {
-  margin-left: 4px;
-}
+
 
 .trends-card {
   width: 100%;
@@ -248,7 +246,6 @@
 .post-list {
   display: flex;
   flex-wrap: wrap;
-
   width: 100%;
   margin-left: 1em;
   margin-right: 1em;
@@ -503,7 +500,7 @@
 
 .shop-card {
   width: 308px;
-  height: 227px;
+  height: 250px;
   border: 3px solid rgba(181, 159, 91, 0.6);
   padding: 23px;
   display: flex;
