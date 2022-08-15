@@ -263,7 +263,6 @@
 .post-list-card__img-container {
     width: 385px;
     height: 294px;
-    background-color: #eff6f1;
 }
 
 .post-list-card__main {
@@ -516,6 +515,7 @@
     position: absolute;
     background-repeat: no-repeat;
     top: -75%;
+    z-index: -1;
 }
 
 .shop-card-title {
